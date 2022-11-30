@@ -1,0 +1,6 @@
+package com.homebanking.utils;
+
+public enum AccountType {
+	SAVINGS_ACCOUNT, FIXED_TERM, CURRENT_ACCOUNT, SAVINGS_ACCOUNT_USD, FIXED_TERM_USD, CURRENT_ACCOUNT_USD
+
+}
