@@ -22,7 +22,7 @@ public class Transaction {
     // private TransactionsType type;
     private Double amount;
     private String description;
-    private Date date;
+    private Date date_trans;
 
     @ManyToOne
     private Account account;
@@ -34,7 +34,7 @@ public class Transaction {
     public Transaction(Double amount, String description, Date date) {
         this.amount = amount;
         this.description = description;
-        this.date = date;
+        this.date_trans = date;
     }
 
 }
