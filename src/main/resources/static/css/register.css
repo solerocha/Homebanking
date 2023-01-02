@@ -1,0 +1,140 @@
+.div-body {
+    background: linear-gradient(to bottom, #8d2e2e, hsl(340, 6%, 10%));
+}
+
+/*---- Header div-body----*/
+
+header nav .nav-logo {
+    width: 10%;
+    justify-content: left;
+}
+
+header nav .nav-menu-items {
+    width: 60%;
+    justify-content: center;
+}
+
+header nav .nav-search {
+    width: 20%;
+    justify-content: center;
+}
+
+header nav .nav-login {
+    width: 10%;
+    justify-content: center;
+}
+
+/*---- Main div-body----*/
+
+.content-main-register {
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+    display: grid;
+    color: white;
+}
+
+.div-form-register-group {
+    width: 700px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+} 
+
+input {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus {
+    outline: none;
+    color: rgba(94, 91, 93);
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    border-left: 0;
+    /*bottom: 0;*/
+    padding-left: 0;
+    bottom: 5px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+    display: inline-block;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to bottom, #8d2e2e, hsl(345, 5%, 16%));
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before {
+    width: 100%;
+}
+
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #8d2e2e;
+    padding-top: 20px;
+}
+
+.btn-reg {
+    font-family: 'roboto';
+    background: #2268c4;
+    /*Fallback for old browsers*/
+    background: -webkit-linear-gradient(to right, #2268c4, hsl(345, 5%, 16%));
+    /*Chrome*/
+    background: linear-gradient(to right, #2268c4, hsl(345, 5%, 16%));
+    /*Edge, Chrome 26+, Opera 12+, Safari 7+*/
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 120px;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.4s;
+    font-weight: bold;
+}
+
+.btn-reg:hover {
+    transform: scale(1.1);
+    font-size: 16px;
+}

@@ -1,8 +1,9 @@
 package com.homebanking.models;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,11 +25,20 @@ public class Account {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@Column
 	private String name;
+
+	@Column
 	private Double balance; // Monto
+
+	@Column
 	private String cbu;
+
+	@Column
 	private AccountType type;
-	private Date creationDate;
+
+	@Column
+	private LocalDate creationDate;
 
 	@ManyToOne
 	private User owner;
@@ -40,7 +50,7 @@ public class Account {
 
 	}
 
-	public Account(String name, Double balance, String cbu, AccountType type, Date creationDate) {
+	public Account(String name, Double balance, String cbu, AccountType type, LocalDate creationDate) {
 		this.name = name;
 		this.balance = balance;
 		this.cbu = cbu;

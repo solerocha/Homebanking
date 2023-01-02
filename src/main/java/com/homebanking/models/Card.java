@@ -2,6 +2,7 @@ package com.homebanking.models;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,15 +23,25 @@ public class Card {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column
     private String numberCard;
+
+    @Column
     private Date fromDate;
+    @Column
     private Date toDate;
+    @Column
     private String nameClient;
+    @Column
     private EmisorType emisor;
+    @Column
     private int cvv;
+    @Column
     private boolean contacless;
+    @Column
     private boolean chip;
 
+    @Column
     @ManyToOne
     private User owner;
 

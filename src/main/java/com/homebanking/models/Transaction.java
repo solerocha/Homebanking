@@ -2,11 +2,11 @@ package com.homebanking.models;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -19,13 +19,21 @@ public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     private Long id;
-    // private TransactionsType type;
+
+    @Column
     private Double amount;
+
+    @Column
     private String description;
+
+    @Column
     private Date date_trans;
 
-    @ManyToOne
-    private Account account;
+    @Column
+    private Account id_account_destine;
+
+    @Column
+    private Account id_account_source;
 
     public Transaction() {
 

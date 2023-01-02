@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {    
+    margin: 30px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/client/images/fondo.png);
+}
+
+a {
+    text-decoration: none; /*No quiero ninguna etiqueta con ancla*/
+}
+
+.div-body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px auto 140px;
+    align-items: center;
+}
+
+
+/* Header -------------------------------- */
+.header-body {
+    width: 100%;
+    background-color: #1C191A;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header-body nav {
+    font-size:larger;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.header-body nav .nav-logo {
+    border-radius: 5px;
+    width: 10%;
+    display: flex;
+    margin: 0;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.header-body nav .nav-menu-items {
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    text-transform: uppercase;
+}
+
+.header-body nav .nav-search {
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 15%;
+}
+
+.header-body nav .nav-login {
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.header-body nav .nav-register {
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.nav-logo li  a img {
+    display: flex;
+    object-fit: contain;
+}
+
+nav .nav-menu-items a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+nav .nav-login a {
+    margin-right: 0;
+    background-color: rgb(212, 93, 93);
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+nav .nav-register a {
+    margin-right: 0;
+    background-color: rgb(74, 177, 172);
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.nav-logo img:hover {
+    transform: scale(0.9)
+}
+
+.nav-login li a:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+}
+
+.nav-register li a:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+}
+
+.nav-menu-items li a:hover {
+    transform: scale(1.2);
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Main ------------------ */
+.container-main {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creo 5 columnas*/
+    background-color: transparent;
+}
+
+.container-main > .header-main, .container-main > .div-post-main {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.div-post-main a {
+    text-align: center;
+}
+
+.container-main > .header-main{
+    color: rgb(235, 223, 223);
+    grid-column: 1/-1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+h1 {
+    color: rgb(235, 223, 223);
+    font-size: 12px;
+}
+
+.content-main .div-main h3,
+.content-main .div-main img:hover {
+    padding: 10px;   
+}
+
+
+.container-main > .div-post-main {    
+    color: #ffffff;
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;    
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.container-main>.div-post-main:hover, .content-main>.div-main:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+}
+
+/* Footer ------------------ */
+.footer-body {
+    background-color: hsl(340, 6%, 10%);
+    color: white;
+    text-align: center;    
+    width: 100%;
+    height: 140px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+}
+
+.footer-body div {
+    margin-bottom: 15px;
+    margin-top: 2px;
+}
+
+.legal-end-footer span{
+    margin-right: 50px;
+}
+
+.footer-1 {
+    display: grid;
+}
+
+.footer-body div .comeback-top {
+    color: white;
+}

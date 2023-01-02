@@ -1,0 +1,55 @@
+.div-body {
+    background: linear-gradient(to bottom, #8d2e2e, hsl(340, 6%, 10%));
+    color: white;
+}
+.container-main-login {
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+    display: grid;
+}
+
+header nav .nav-logo {
+    width: 10%;
+    justify-content: left;
+}
+
+header nav .nav-menu-items {
+    width: 70%;
+    justify-content: center;
+}
+
+header nav .nav-search {    
+    width: 20%;
+    justify-content: center;
+}
+
+.bg-form-2 {
+    color: white;
+    background-color:  hsl(340, 6%, 10%);
+}
+
+.btn-login {
+    font-family: 'roboto';
+    background: #2268c4;
+    /*Fallback for old browsers*/
+    background: -webkit-linear-gradient(to right, #2268c4, hsl(345, 5%, 16%));
+    /*Chrome*/
+    background: linear-gradient(to right, #2268c4, hsl(345, 5%, 16%));
+    /*Edge, Chrome 26+, Opera 12+, Safari 7+*/
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 120px;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.4s;
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    transform: scale(1.1);
+    font-size: 16px;
+}
